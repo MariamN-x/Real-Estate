@@ -21,9 +21,16 @@
                     </a>
                 </li>
 
-            
-
              
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+
 
                 <li>
                     <a href="orders.html">
@@ -36,7 +43,7 @@
 
 
                 <li>
-                    <a href="schaduled.html">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="Watch"></ion-icon>
                         </span>
@@ -44,14 +51,6 @@
                     </a>
                 </li>
 
-   <li>
-                    <a href="customers.html">
-                        <span class="icon">
-                            <ion-icon name="people-outline"></ion-icon>
-                        </span>
-                        <span class="title">Customers</span>
-                    </a>
-                </li>
 
 
                 <li>
@@ -155,11 +154,11 @@
                 </div>
             </div>
 
-            <!-- ================ Order Details List ================= -->
+            <!-- ================ Order  ================= -->
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2> Orders</h2>
+                        <h2>Recent Orders</h2>
                         <a href="#" class="btn">View All</a>
                     </div>
 
@@ -169,7 +168,7 @@
                                 <td>Name</td>
                                 <td>Price</td>
                                 <td>Payment</td>
-                                
+                                <td>Status</td>
                             </tr>
                         </thead>
 
@@ -178,104 +177,151 @@
                                 <td>mountain view villa 111</td>
                                 <td>EGP/30000000</td>
                                 <td>Paid</td>
-                                
+                                <td><span class="status delivered">Delivered</span></td>
                             </tr>
 
                             <tr>
                                 <td>Badya palm hills villa 272</td>
                                 <td>EGP/40000000</td>
                                 <td>Due</td>
-                               
+                                <td><span class="status pending">Pending</span></td>
                             </tr>
 
                             <tr>
                                 <td>mountain view villa 193</td>
                                 <td>EGP/50000000</td>
                                 <td>Paid</td>
-                               
+                                <td><span class="status return">Return</span></td>
                             </tr>
 
                             <tr>
                                 <td>Badya palm hills villa 822</td>
                                 <td>EGP/60000000</td>
                                 <td>Due</td>
-                               
+                                <td><span class="status inProgress">In Progress</span></td>
                             </tr>
 
                             <tr>
                                 <td>mountain view villa 713</td>
                                 <td>EGP/70000000</td>
                                 <td>Paid</td>
-                                
+                                <td><span class="status delivered">Delivered</span></td>
                             </tr>
 
                             <tr>
                                 <td>Badya palm hills villa 252</td>
                                 <td>EGP/80000000</td>
                                 <td>Due</td>
-                               
+                                <td><span class="status pending">Pending</span></td>
                             </tr>
 
                             <tr>
                                 <td>mountain view villa 123</td>
                                 <td>EGP/90000000</td>
                                 <td>Paid</td>
-                               
+                                <td><span class="status return">Return</span></td>
                             </tr>
 
                             <tr>
                                 <td>Badya palm hills villa 322</td>
                                 <td>EGP/10000000</td>
                                 <td>Due</td>
-                                
+                                <td><span class="status inProgress">In Progress</span></td>
                             </tr>
                         </tbody>
-                       
-                          
-                        
-                    </table> 
-                    <div class="button-container">
-                        <a  class="button" onclick="openModal('addOrderModal')">Add Order</a>
-                        <a class="button" onclick="openModal('editRemoveOrderModal')">Edit Order</a>
-                        <a class="button" onclick="openModal('editRemoveOrderModal')">Remove Order</a>
-                    </div>
-                    
+                    </table>
                 </div>
 
+                <!-- ================= New Customers ================ -->
+               <!-- <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
 
-                
-<div id="add-form" style="display: none;">
-    <h2>Add Order</h2>
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="price-add">Price:</label><br>
-      <input type="text" id="price-add" name="price"><br>
-      <label for="payment-add">Payment:</label><br>
-      <input type="text" id="payment-add" name="payment"><br>
-      <button type="submit" class="button">Add</button>
-    </form>
-  </div>
-  
-  <div id="edit-form" style="display: none;">
-    <h2>Edit Order</h2>
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="price">Price:</label><br>
-      <input type="text" id="price" name="price"><br>
-      <label for="payment">Payment:</label><br>
-      <input type="text" id="payment" name="payment"><br>
-      
-      <button type="submit" class="button">Save Changes</button>
-    </form>
-  </div>
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>Italy</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Amit <br> <span>India</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>Italy</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Amit <br> <span>India</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>Italy</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Amit <br> <span>India</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>Italy</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Amit <br> <span>India</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>-->
 
     <!-- =========== Scripts =========  -->
     <script src="assets/js/main.js"></script>
 
-              <!-- ====== ionicons ======= -->
+    <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
