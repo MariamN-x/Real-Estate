@@ -1,0 +1,82 @@
+
+#secoundmaindiv{
+    display: flex;
+}
+#start{
+    box-shadow: 0 5px 10px black;
+    height:500px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#leftbutton,#rightbutton{
+    height:10%;
+    border: 1px solid black;
+    background-color: rgba(95, 168, 236, 0);
+}
+#myform{
+    display: flex;
+    flex-direction: row;
+}
+#contentdiv{
+    box-shadow: 0 5px 10px black;
+    height:400px;
+    width:70%;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    align-items: center;
+    display:flex;
+}
+#contentdiv2{
+    box-shadow: 0 5px 10px black;
+    height:400px;
+    width:30%;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+}
+#acon{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display:grid;
+    justify-content: center;
+}
+span{
+    margin-left: 10px;
+}
+#price,#price2{
+    font-weight: bold;
+}
+#acon:hover{
+    transform: scale(1.05);
+}
+a{
+    text-decoration: none;
+}
+.kalam{
+    color:white;
+}
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+.icon{
+    width:15px;
+    height:15px;
+    vertical-align: middle;
+    margin-right:2px;
+}
