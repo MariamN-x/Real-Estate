@@ -14,11 +14,6 @@ body {
     flex-wrap: wrap;
     margin: 0 -16px;
   }
-  
-  .col-25 {
-    flex: 25%;
-  }
-  
   .cols{
     flex: 50%;
   }
@@ -36,7 +31,7 @@ body {
   }
   
   
-  input{
+  input[type="text"]{
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
@@ -44,11 +39,23 @@ body {
     border-radius: 3px;
   }
   
-  label {
-    margin-bottom: 10px;
+  .pay-price{
+    float: left;
+    clear: none;
     display: block;
+    padding: 0px 1em 0px 8px;
   }
   
+  input[type=radio],
+  input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+  }
+  .some-class {
+    float: left;
+    clear: none;
+  }
   .icon-container {
     margin-bottom: 20px;
     padding: 7px 0;
