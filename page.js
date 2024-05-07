@@ -8,11 +8,12 @@ var i=1;
 var i2=1;
 const n=3;
 const n2=allobjects.length;
-const params = new URLSearchParams(document.location.search);
-let b=params.get("btn");
-if(b==null)
-b=1;
+let b;
 window.onload = function() {
+const params = new URLSearchParams(document.location.search);
+b=params.get("btn");
+if(b==null)
+    b=1;
 getbutton();
 setInterval(incimage,6000);
 setInterval(incimage2,6000);
@@ -91,8 +92,6 @@ function getbutton(){
     
 }
 function checkimg(){
-    const params = new URLSearchParams(document.location.search);
-    const b=params.get("btn");
     let u='images'+b;
     if(i==1)
     {
@@ -111,8 +110,6 @@ function checkimg(){
     }
 }
 function checkimg2(){
-    const params = new URLSearchParams(document.location.search);
-    const b=params.get("btn");
     let u='mainimages';
     for(let y in allobjects)
     {
