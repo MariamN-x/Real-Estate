@@ -43,14 +43,14 @@ function animateOnScroll(element) {
       passwordError.textContent = '';
     }
 
-    // Display success message and redirect to Mainindex.html
     const successMessage = document.createElement('div');
     successMessage.textContent = 'Successfully Signed up!';
     successMessage.style.color = 'green';
     document.body.appendChild(successMessage);
 
     setTimeout(function () {
-      window.location.href = 'Mainindex.html';
+      var ll=document.getElementById("username").value;
+      window.location.href = 'Mainindex.html?user='+ll;
     }, 1000);
   });
 
