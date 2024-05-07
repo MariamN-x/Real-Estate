@@ -21,7 +21,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav">
 
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="Mainindex.html">Home</a>
@@ -83,10 +83,10 @@
 </div>
     <div id="secoundmaindiv">
     <div id="contentdiv">
-        <div style="display: grid;width:150%">
-            <img style="size:50%" src="https://www.sobharealty.com/media/hq1mgpy1/group-28552-2.svg">
+        <div style="display: grid;max-width:150%">
+            <img style="max-width:50%" src="https://www.sobharealty.com/media/hq1mgpy1/group-28552-2.svg">
             <h1>Description</h1>
-            <p style="margin-top:0px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tenetur incidunt eum aliquam in, delectus velit molestiae et, fuga distinctio perspiciatis nesciunt recusandae, omnis dolor alias. Quis consequuntur odio fugiat!</p>
+            <p id="page" style="margin-top:0px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tenetur incidunt eum aliquam in, delectus velit molestiae et, fuga distinctio perspiciatis nesciunt recusandae, omnis dolor alias. Quis consequuntur odio fugiat!</p>
             <h1 style="margin-top:0px;">Details</h1>
             <div style="display:flex;margin-top:0px;">
                 <div style="display:grid">
@@ -102,25 +102,29 @@
             </div>
         </div>
         </div>
-        <div style="display: grid;margin-left:10%;margin-top:50px;border-left:1px double black;padding-left:20px;width:100%">
+        <div style="display: grid;margin-left:10%;margin-top:50px;border-left:1px double black;padding-left:20px;max-width:100%">
+        <div style="display:flex;">
         <p>Price:<span id="price"></span></p>
+        <a id="paymentancor" href="payment.html">Pay now</a>
+    </div>
         <p style="margin:5px 0px 0px 0px">Location</p>
         <div id="acon">
-           <a id="loc" target="_blank"><img style="width:100%;height:100%;" src="WhatsApp Image 2024-04-30 at 12.34.46_ade92178.jpg"></a>
+           <a id="loc" target="_blank"><img style="max-width:100%;height:100%;" src="WhatsApp Image 2024-04-30 at 12.34.46_ade92178.jpg"></a>
         </div>
     </div>
     </div>
     <div id="contentdiv2">
         <div id="leftandright" style="display:flex;margin-top:150px;">
-        <button style="height:30px;width:20px" id="leftbutton" onclick="return decimage2()"><</button>
-        <button style="margin-left: 90%;height:30px;width:20px" id="rightbutton" onclick="return incimage2()">></button>
+        <button style="height:30px;max-width:20px" id="leftbutton2" onclick="return decimage2()"><</button>
+        <button style="height:30px;max-width:20px" id="rightbutton2" onclick="return incimage2()">></button>
         </div>
         <div style="margin-top:10%;">
-            <h1 class="kalam" id="makan2"></h1>
-            <h2 class="kalam">price<h2 class="kalam" id="price2"></h2></h2>
+            <h3 class="kalam" id="makan2"></h3>
+            <h4 class="kalam">price<h3 class="kalam" id="price2"></h3></h4>
             <a class="kalam" id="anchortag">click for more<span class="material-symbols-outlined"> arrow_right_alt </span></a>
         </div>
     </div>
 </div>
 </body>
+<script src="page.js"></script>
 </html>
