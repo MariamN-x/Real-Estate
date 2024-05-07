@@ -181,33 +181,16 @@ document.querySelectorAll(".tabled tbody tr").forEach(function(row) {
 
 
 
-
-
 function updateTable(data) {
- 
   const tableBody = document.querySelector(".tabled tbody");
   tableBody.innerHTML = "";
 
- 
-  for (const rowData of data) {
+  data.forEach(function (rowData) {
     const row = document.createElement("tr");
-    row.innerHTML = `<td>${rowData.name}</td><td>${rowData.price}</td><td>${rowData.payment}</td>`;
+    row.innerHTML = `<td>${rowData.name || ''}</td><td>${rowData.price || ''}</td><td>${rowData.payment || ''}</td>`;
     tableBody.appendChild(row);
-  }
+  });
 
-  
   localStorage.setItem("orders", JSON.stringify(data));
 }
 
-window.addEventListener("load", function() {
-  const orders = JSON.parse(localStorage.getItem("orders")) || [];
-  orders.forEach(function(order) {
-    const row = document.createElement("tr");
-    row.innerHTML = `
-      <td>${order.name}</td>
-      <td>${order.price}</td>
-      <td>${order.payment}</td>
-    `;
-    document.querySelector(".tabled tbody").appendChild(row);
-  });
-});
